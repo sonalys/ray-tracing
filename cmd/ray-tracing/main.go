@@ -11,7 +11,7 @@ func main() {
 		Sky: &raytracing.Sky{
 			TextureMaterial: raytracing.NewTexturedMaterial(raytracing.Pixel{
 				0, 0, 1,
-			}, "/hd/repos/ray-tracing/data/beach.jpg", 0),
+			}, "./data/beach.jpg", 0),
 		},
 		Objects: []raytracing.Sphere{
 			// {
@@ -24,7 +24,7 @@ func main() {
 				Radius: 1,
 				Scatterable: raytracing.NewTexturedMaterial(raytracing.Pixel{
 					0, 0, 0,
-				}, "/hd/repos/ray-tracing/data/earth.jpg", 0),
+				}, "./data/earth.jpg", 0),
 			},
 			{
 				Center: raytracing.Point3D{3.2, 3.2, 3.2},
